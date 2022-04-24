@@ -1,466 +1,474 @@
 <!DOCTYPE html>
-<html lang='es'>
+<html lang="es">
 
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no'>
-    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
-    <title>Conoce Seminare</title>
-    <!-- Bootstrap css.min -->
-    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
-        integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- custom css -->
-    <link rel='stylesheet' href='assets/style/style.min.css'>
-    <!-- Google Analytics -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Desarrollo: Sergio R. Téllez">
+    <meta name="author" content="Diseño: Sergio R. Téllez">
+    <meta name="theme-color" content="#333">
+    <!-- font awesome General kit -->
+    <script src="https://kit.fontawesome.com/b485de8470.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,500;1,900&display=swap" rel="stylesheet">
+    <title>Seminare | Ventas</title>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/style/style.min.css">
+    <!-- Fav icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
 
-    <!-- End Google Analytics -->
-    <!-- fav ico -->
-    <link rel='shortcut icon' type='image/x-icon' href='' />
+
 </head>
 
-<body data-spy="scroll" data-target="#nav-funcional">
-    <!-- add id #nav-funcional to make spy-scroll work -->
+<body class="spy-scroll">
+    <!--AOS, animaciones on view-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--fin de AOS, animaciones on view-->
     <!------------------------------------------------->
-    <!-- navbar -->
+    <!--   nav	-->
     <!------------------------------------------------->
+    <nav id="navbar">
+        <a href="#" class="brand"><img src="assets/images/seminare-logo-min.png" alt="projectLogo"></a>
+        <a href="javascript:void(0);" class="iconTrigger">&#9776;</a>
+        <section class="navContents">
+            <a href="#que_es" class="active">¿Qué es?</a>
+            <a href="#como_funciona">¿Cómo Funciona?</a>
+            <a href="#contenidos">Contenidos</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#precios">Precios</a>
 
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top" id="nav-funcional">
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/seminare-logo-prov.png" width="120" height="30" class="d-inline-block align-top"
-                alt="seminare-logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav w-100 d-flex justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="#page-top">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#dev">DEV<i class="fas fa-code"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#seminare">Seminare</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#testimonios">Testimonios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#faq">FAQ</a>
-                </li>
-            </ul>
-        </div>
+        </section>
     </nav>
+    <!------------------------------------------------->
+    <!--  end nav	-->
+    <!------------------------------------------------->
 
     <!------------------------------------------------->
-    <!--   end navbar  -->
+    <!--	portada	-->
     <!------------------------------------------------->
-    <!------------------------------------------------->
-    <!--   jumbotron    -->
-    <!------------------------------------------------->
-    <div class="jumbotron jumbotron-fluid min-100" id="page-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md">
-                    <div class="card h-100">
-                        <div class="card-body card-black">
-                            <h5 class="card-title title-blue">DEV<i class="fas fa-code"></i></h5>
-                            <p class="card-text">Tres cursos de programación <i class="fas fa-laptop-code"></i> para
-                                adolescentes.
-                            </p>
-                            <ul>
-                                <li><span style="color: #689bd6;">Modelo pedagógico</span> desarrollado para acelerar el
-                                    aprendizaje.</li>
-                                <li>Orientados a <span style="color: #689bd6;">proyectos</span> y de corte <span
-                                        style="color: #689bd6;">constructivista</span>.</li>
-                                <li><span style="color: #689bd6;">Plataforma</span> a la medida</li>
-                            </ul>
-
-                        </div>
-                        <a href="#dev" class="btn btn-blue">Conoce más <i class="fas fa-search-plus"></i></a>
-                    </div>
+    <header id="portada">
+        <img src="assets/images/seminare-logo-max.png" alt="seminare" data-aos="flip-up" data-aos-duration="3000">
+        <div id="stats-container" data-aos="fade-up" data-aos-duration="1000">
+            <div class="stats">
+                <div class="icono-stat">
+                    <i class="fad fa-user-graduate"></i>
                 </div>
-                <div class="col-md">
-                    <div class="card h-100">
-                        <div class="card-body card-black">
-                            <h5 class="card-title"> <img src="assets/images/seminare-logo-prov.png" width="120"
-                                    height="30" class="d-inline-block align-top" alt="seminare-logo"></h5>
-                            <p class="card-text">El proyecto más grande del programa. Es un semillero de emprendimiento
-                                para adolescentes.
-                            </p>
-                            <ul>
-                                <li>Repleto de <span style="color:  #e47f47;">competencias</span> y desarrollo de
-                                    <span style="color:  #e47f47;">habilidades</span>.</li>
-                                <li><span style="color:  #e47f47;">Plataforma</span> a la medida.</li>
-                                <li>Incluye <span style="color:  #e47f47;">capacitación</span> y apoyo para los
-                                    <span style="color:  #e47f47;">profesores</span>.</li>
+                <div>
+                    <span class="numero-stat" id="alumnosEgresados"></span><span class="numero-stat"> +</span>
+                </div>
+                <div class="descripcion-stat">Alumnos Egresados</div>
+            </div>
+            <div class="stats">
+                <div class="icono-stat">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="numero-stat" id="startupsCreadas"></div>
+                <div class="descripcion-stat">Startups creadas</div>
+            </div>
+            <div class="stats">
+                <div class="icono-stat">
+                    <i class="fad fa-gamepad-alt"></i>
+                </div>
+                <div class="numero-stat " id="startupsSimuladas">360</div>
+                <div class="descripcion-stat">Startups Simuladas</div>
+            </div>
+        </div>
+        <a href="#que_es"><span class='fa fa-angle-down vertical-move'></span></a>
+    </header>
+    <!------------------------------------------------->
+    <!--	end portada	-->
+    <!------------------------------------------------->
 
-                            </ul>
+    <!------------------------------------------------->
+    <!--	Qué es	-->
+    <!------------------------------------------------->
+    <section onClick="false" id="que_es">
+        <span class="tituloGrande">¿Qué <span class="desfaz">es?</span></span>
+        <div class="columnasFlex">
+            <p><img class="seminare-text" src="assets/images/seminare-logo-min.png" alt="Seminare"> Es un programa educativo de <span class="contrast">tres años</span> de duración diseñado para adolescentes. Su <span class="contrast">misión</span> es introducir a los alumnos a los mundos de la
+                <b>programación</b>, el <b>
+                    desarrollo de
+                    productos
+                </b> que solucionan problemas concretos
+                y el <b>emprendimiento</b>.
 
-                        </div>
-                        <a href="#seminare" class="btn btn-orange">Conoce más <i class="fas fa-search-plus"></i></a>
-                    </div>
+                <p>La metodología que emplea es totalmente <span class="contrast">constructivista <span class='fad fa-cubes '></span></span>, centrada en el alumno <span class='fad fa-user '></span> y <span class="contrast">orientada a proyectos <span class='fad fa-tools '></span>.</span> </p>
+                <p>En una era en la que la educación ha sufrido cambios inesperados este programa se caracteriza por tener la posibilidad de ejecutarse totalmente en línea <span class='fad fa-laptop'></span>, teniendo módulos sincrónicos <i class="fad fa-alarm-clock"></i> y asincrónicos <i
+                        class="fad fa-history"></i>. Lo que lo
+                    hace
+                    extremadamente flexible sin descuidar el carácter personalizado de
+                    la educación presencial <i class="fa-duotone fa-screen-users"></i> que por supuesto sigue siendo la opción predeterminada del programa. </p>
+
+                <p>Durante los últimos 7 años el equipo de <img class=" seminare-text" src="assets/images/seminare-logo-min.png" alt="Seminare"> ha desarrollado pedagogía especial para enseñar programación a adolescentes, el modelo <span class="contrast">OCii</span> ha sido exitoso generador de
+                    cientos
+                    de buenos desarrolladores y
+                    emprendedores adolescentes.</p>
+
+                <p>Un proyecto de corte constructivista se mide por las habilidades y competencias que desarrolla en los alumnos que lo cursan, la siguiente tabla explica algunas de las que estamos esperando florezcan en nuestros alumnos:</p>
+        </div>
+
+        <span class="tituloGrande"> Habilidades <span class="desfaz2">esperadas</span></span>
+        <div id="habilidades">
+            <div onClick="true" class="tooltip">Bloques<i class="fa-duotone fa-puzzle" style="margin-left: 0.4rem;"></i>
+                <span class="tooltiptext">Nuestro primer curso introduce los conceptos básicos de programación creando videojuegos en un lenguaje de bloques.</span></div>
+            <div onClick="true" class="tooltip">HTML <span class='fab fa-html5' style="margin-left: 0.3rem;"></span>
+                <span class="tooltiptext">HTML es el lenguaje de marcado de la red, perfecto para introducir a nuestros alumnos al código. Lo aprenderán en nivel avanzado.</span></div>
+            <div onClick="true" class="tooltip">CSS <span class='fab fa-css3-alt' style="margin-left: 0.3rem;"></span>
+                <span class="tooltiptext">Para diseñar proyectos de calidad profesional enseñamos las técnicas y tecnologías más actualizadas de la industria disponibles en la tercera iteración de CSS.</span></div>
+            <div onClick="true" class="tooltip">JavaScript <i class="fab fa-js-square" style="margin-left: 0.4rem;"></i>
+                <span class="tooltiptext">JavaScript es lenguaje de programación de internet por excelencia y será el que aprenderán para desarrollar aplicaciones web de nivel medio o superior.</span></div>
+            <div onClick="true" class="tooltip">Emprender
+                <span class="tooltiptext">Un curso de emprendimiento está implícito a lo largo de los tres años. Cada año todos los alumnos participarán en la creación de un startup. <img class="seminare-text" src="assets/images/seminare-logo-min.png" alt="Seminare"> proporciona la plataforma
+                    para simular las empresas en un entorno de competencia sana.</span> </div>
+
+            <div onClick="true" class="tooltip">Liderazgo y Colaboración
+                <span class="tooltiptext">
+                    <img class="seminare-text" src="assets/images/seminare-logo-min.png" alt="Seminare"> es un semillero de líderes. <br>El proyecto está diseñado para emular de manera segura la realidad, permitiendo el desarrollo de cualidades de liderazgo en nuestros alumnos.
+                    <br>Trabajamos para formar líderes con sentido humano, acostumbrados a colaborar en equipo, entendiendo que el bien común es generalmente el mejor camino a seguir. El programa tiene mecanismos que siembran estas ideas en ellos de manera
+                    imperceptible.
+                </span>
+            </div>
+            <div onClick="true" class="tooltip">Pensamiento Algorítmico
+                <span class="tooltiptext">Como consecuencia de nuestra aproximación al código se propone poco a poco una manera de pensar y resolver problemas adecuada al siglo XXI, el pensamiento algorítmico por sí mismo les dará mejores oportunidades para competir en cualquier ámbito en el
+                    futuro.</span></div>
+            <div onClick="true" class="tooltip">Resiliencia y autogestión
+                <span class="tooltiptext"> Probablemente <img class="seminare-text" src="assets/images/seminare-logo-min.png" alt="Seminare"> será una de las experiencias más intensas y demandantes de su vida de estudiante, aprenderán técnicas para lidiar con la frustración. </span></div>
+        </div>
+    </section>
+    <!------------------------------------------------->
+    <!--	end Qué es	-->
+    <!------------------------------------------------->
+    <!------------------------------------------------->
+    <!--	Cómo funciona	-->
+    <!------------------------------------------------->
+    <section id="como_funciona">
+        <span class="tituloGrande">¿Cómo <span class="desfaz_como_funciona">funciona?</span></span>
+        <p style="margin: 4rem 2rem;">La estructura del programa es la misma a lo largo de los tres años. Consta de tres módulos. </p>
+        <!--	*** módulos ***	-->
+        <div class="cardsModulocontainer">
+            <!-- Módulo de Programación -->
+            <div class="cardModulo">
+                <div class="cardModuloHeader">
+                    <div><i class='fad fa-laptop-code '></i></div>
+                    Módulo de programación
+                </div>
+                <div class="cardModuloBody">
+                    <ul>
+                        <li><i class="fad fa-history"></i>Módulo asincrónico / presencial</li>
+                        <li><i class="fad fa-calendar-alt"></i>13 semanas </li>
+                        <li><i class="fad fa-user-hard-hat"></i>Orientado a proyectos</li>
+                        <li><i class="fad fa-laptop"></i>Guiado por plataforma</li>
+                        <li><i class="fa-brands fa-youtube"></i>200+ videos de instrucción</li>
+                        <li><i class="fad fa-graduation-cap"></i>Respaldado por OCii</li>
+                    </ul>
+                </div>
+                <div class="cardModuloFooter">
+                    <span style="color:var(--contrast);font-weight: 500;"><i class="fad fa-crosshairs"></i>Objetivo primario:</span>
+                    <span>Desarrollar el pensamiento algorítmico de nuestros alumnos mientras construyen habilidades necesarias en código para construir productos de clase profesional.
+                    </span>
+                </div>
+            </div>
+            <!-- Módulo de Orientación -->
+            <div class="cardModulo">
+
+                <div class="cardModuloHeader">
+                    <div><i class='fad fa-map-signs'></i></div>
+                    Proyectos Guiados
+                </div>
+                <div class="cardModuloBody">
+                    <ul>
+                        <li><i class="fad fa-history"></i>Módulo mixto asincrónico y sincrónico</li>
+                        <li><i class="fad fa-calendar-alt"></i>12 semanas </li>
+                        <li><i class="fad fa-chalkboard-teacher"></i>Guiado por el profesor</li>
+                        <li><i class="fad fa-laptop"></i>Apoyado por plataforma</li>
+                        <li><i class="fad fa-compass"></i>Orientado a reflexionar y proponer soluciones de problemas sociales.</li>
+
+                    </ul>
+                </div>
+                <div class="cardModuloFooter">
+                    <span style="color:var(--contrast);font-weight: 500;"><i class="fad fa-crosshairs"></i>Objetivo primario:</span>
+                    <span>Contextualizar a nuestros alumnos en una situación permanentemente mutable en el entorno mundial. Proponerle una metodología de reflexión e implementación de soluciones, además de involucrarlo con el mundo en el que se desenvuelve. </span>
+                </div>
+            </div>
+            <!-- Módulo de Emprendimiento -->
+            <div class="cardModulo">
+                <div class="cardModuloHeader">
+                    <div><i class='fad fa-user-tie'></i></div>
+                    Módulo de Emprendimiento
+                </div>
+                <div class="cardModuloBody">
+                    <ul>
+                        <li><i class="fad fa-history"></i>Módulo mixto asincrónico y sincrónico</li>
+                        <li><i class="fad fa-calendar-alt"></i>13 semanas </li>
+                        <li><i class="fad fa-laptop"></i>Guiado por plataforma</li>
+                        <li><i class="fad fa-chalkboard-teacher"></i>Guiado por el profesor</li>
+                        <li><i class="fad fa-wrench"></i>Módulo 100% práctico</li>
+                        <li><i class="fad fa-compass"></i>Orientado a la vida real</li>
+                    </ul>
+                </div>
+                <div class="cardModuloFooter">
+                    <span style="color:var(--contrast);font-weight: 500;"><i class="fad fa-crosshairs"></i>Objetivo primario:</span>
+                    <span>Construir una startup desde cero y lograr su supervivencia. Entender y practicar el desarrollo de productos que aportan valor al mundo.</span>
                 </div>
             </div>
         </div>
-    </div>
-    <!------------------------------------------------->
-    <!-- end jumbotron  -->
-    <!------------------------------------------------->
+        <!--	*** end módulos ***	-->
+        <!--	*** OCIi ***	-->
+        <div class="tituloGrande">Modelo OCii</div>
 
-    <!------------------------------------------------->
-    <!--	DEV    -->
-    <!------------------------------------------------->
-    <div class="container-fluid" id="dev">
-        <div class="row">
-            <div class="col p-5 mt-2">
-                <p><span style="color: #689bd6;">DEV<i class="fas fa-code"></i></span> son tres cursos de <span
-                        style="color: #689bd6;">programación</span>
-                    para adolescentes de corte
-                    <span style="color: #689bd6;">constructivista</span> y orientado a
-                    <span style="color: #689bd6;">proyectos</span>, basados en el modelo <span
-                        style="color: #689bd6;">PLFi</span>, desarrollado por Human
-                    Inspiration en 2015. Desde entonces el
-                    programa ha <span style="color: #689bd6;">egresado</span> a más de <span style="color: #689bd6;">360
-                        alumnos</span> con muy diversas
-                    habilidades. Actualmente se desarrolla
-                    en colegios de alto prestigio como el <a href="https://www.colegios-cedros-yaocalli.mx/cedros"
-                        target="_blank" style="color: #689bd6; text-decoration: underline">Centro Escolar Cedros</a> y
-                    la <a href="https://www.prepaup.edu.mx/varonil" target="_blank"
-                        style="color: #689bd6; text-decoration: underline">PrepaUP</a>
-                    donde tenemos el privilegio
-                    de atender a casi <span style="color: #689bd6;">400 alumnos</span>.</p>
-            </div>
-        </div>
-        <!------------------------------------------------->
-        <!--	features DEV	-->
-        <!------------------------------------------------->
-        <div class="row p-4">
-            <div class="card-deck">
-                <div class="card">
-                    <div class="card-header d-flex flex-column align-items-center justify-content-center">
-                        <div class="pleca d-flex align-items-center justify-content-center"
-                            style="background-color: #e47f47"><i class="fas fa-book-open"></i></div>
-                        <h5 class="card-title mt-2" style="color: #e47f47">PLFi</h5>
-                    </div>
-                    <div class="card-body card-body-dev-features">
+        <div class="OCIiContainer">
+            <div class="OCIiExplicacion">
+                <p>Es un modelo pedagógico con <span class="contrast">7 años</span> de desarrollo y probado con más de <span class="contrast">1000 alumnos</span> de <span class="contrast">13</span> a <span class="contrast">17</span> años. Es constructivista pues está diseñado para que los alumnos
+                    sean autodidactas, resuelvan retos, construyan productos y de esa forma aprendan la teoría. No requiere clases
+                    presenciales tipo ponencia. Las características del modelo se enlistan en las siglas:</p>
 
-                        <p class="card-text">Un modelo que fue creado para enseñar programación a adolescentes.
-                            Las clases en PLFi son centradas en el alumno, el profesor es un facilitador de los medios
-                            de aprendizaje. </p>
 
-                    </div>
-                    <div class="stats card-footer footer-dev-features">700 <i class="fas fa-chalkboard-teacher"></i>
-                        alumnos desde 2015</div>
-                </div>
-                <div class="card">
-                    <div class="card-header d-flex flex-column align-items-center justify-content-center">
-                        <div class="pleca d-flex align-items-center justify-content-center"
-                            style="background-color: #e47f47"><i class="fas fa-laptop-code"></i></div>
-                        <h5 class="card-title mt-2" style="color: #e47f47">Plataforma</h5>
-                    </div>
-                    <div class="card-body card-body-dev-features">
-
-                        <p class="card-text">Desarrollada a la medida para acompañar a profesores y estudiantes en los
-                            tres cursos existentes. El trabajo es semanal y en cada semana hay un FW (flipped week),
-                            retos y actividades de clase y un DCP (práctica)</p>
-
-                    </div>
-                    <div class="stats card-footer footer-dev-features">Material para 12 <i
-                            class="fas fa-calendar-minus"></i>
-                        semanas</div>
-                </div>
-                <div class="card">
-                    <div class="card-header d-flex flex-column align-items-center justify-content-center">
-                        <div class="pleca d-flex align-items-center justify-content-center"
-                            style="background-color: #e47f47"><i class="fas fa-chalkboard-teacher"></i></div>
-                        <h5 class="card-title mt-2" style="color: #e47f47">Capacitación a docentes</h5>
-                    </div>
-                    <div class="card-body card-body-dev-features">
-
-                        <p class="card-text">Puedes implementar los tres cursos con el capital humano con el que cuentas
-                            para dar una clase de Informática. El acompañamiento y entrenamiento a profesores está
-                            incluido.</p>
-                    </div>
-                    <div class="stats card-footer footer-dev-features">Hasta 4 horas <i class="fas fa-clock"></i>
-                        semanales</div>
+                <div class="siglas">
+                    <div><span class="primary">O</span><span>rientado a proyectos</span></div>
+                    <div><span class="primary">C</span><span>entrado en el alumno</span></div>
+                    <div><span class="primary">i</span><span>nvertido</span></div>
+                    <div><span class="primary">i</span><span>nclusivo</span></div>
                 </div>
             </div>
-        </div>
-        <div class="row p-4">
-            <div class="card-deck">
-                <div class="card">
-                    <div class="card-header d-flex flex-column align-items-center justify-content-center">
-                        <div class="pleca d-flex align-items-center justify-content-center"
-                            style="background-color: #e47f47"><i class="fas fa-cubes"></i></div>
-                        <h5 class="card-title mt-2" style="color: #e47f47">DEV1</h5>
-                    </div>
-                    <div class="card-body card-body-dev-features">
-
-                        <p class="card-text">El curso de «Introducción al pensamiento algorítmico» fue diseñado
-                            aprovechando las bondades de la programación por bloques y tiene el objetivo de desarrollar
-                            en los alumnos intuiciones de conceptos de programación.</p>
-                    </div>
-                    <div class="stats card-footer footer-dev-features">Lenguajes: Scratch (MiT)</div>
-                </div>
-                <div class="card">
-                    <div class="card-header d-flex flex-column align-items-center justify-content-center">
-                        <div class="pleca d-flex align-items-center justify-content-center"
-                            style="background-color: #e47f47"><i class="fab fa-html5"></i></div>
-                        <h5 class="card-title mt-2" style="color: #e47f47">DEV2</h5>
-                    </div>
-                    <div class="card-body card-body-dev-features">
-
-                        <p class="card-text">Este curso desarrolla habilidades utilizando código para crear páginas web
-                            estáticas pero semi profesionales. Los alumnos empiezan a nutrirse de competencias
-                            indispensables para cualquier programador de front-end.</p>
-                    </div>
-                    <div class="stats card-footer footer-dev-features">Lenguajes: HTML5 <i class="fab fa-html5"></i>,
-                        CSS3 <i class="fab fa-css3"></i></div>
-                </div>
-                <div class="card">
-                    <div class="card-header d-flex flex-column align-items-center justify-content-center">
-                        <div class="pleca d-flex align-items-center justify-content-center"
-                            style="background-color: #e47f47"><i class="fab fa-js"></i></div>
-                        <h5 class="card-title mt-2" style="color: #e47f47">DEV3</h5>
-                    </div>
-                    <div class="card-body card-body-dev-features">
-
-                        <p class="card-text">Nuestro curso más avanzado dota a los alumnos de habilidades necesarias
-                            para desarrollar aplicaciones web que se ejecuten en el navegador de manera local. Es la
-                            culminación de tres años de entrenamiento.</p>
-                    </div>
-                    <div class="stats card-footer footer-dev-features">Lenguajes: JavaScript <i class="fab fa-js"></i>
-                    </div>
-                </div>
+            <div class="OCIiDiagrama">
+                <p>Este diagrama explica cómo funciona el modelo a lo largo de <b>una semana</b> de trabajo.</p>
+                <iframe class="ociiIframe" src="assets/images/ocii/ocii.html" frameborder="0"></iframe>
             </div>
         </div>
-        <!------------------------------------------------->
-        <!--	end features DEV	-->
-        <!------------------------------------------------->
-        <div class="container">
-            <div class="row mt-4">
-                <div class="col d-flex align-items-center justify-content-center mb-5"><a
-                        href="https://test.huin.mx/dev/" class="btn btn-blue fs-3" target="_blank">visita los demos <i
-                            class="fas fa-gamepad"></i></a>
-                </div>
-            </div>
+        <!--	*** end OCIi ***	-->
+
+        <!-- *** ¿Por qué en línea *** -->
+        <div class="pqLineaContainer">
+            <div class="tituloGrande"><span>¿Por qué <br>en línea?<span class="fad fa-wifi-2" style="margin-left: 0.5rem;"></span></span></div>
+
+            <p>La epidemia de <span class="contrast">COVID19 <i class="fad fa-head-side-mask"></i></span> cambiará para siempre muchos sectores, incluido el educativo. ¿Cómo reaccionarán los mejores centros de enseñanza al catalizador en tecnologías, modelos y
+                posibilidades que hemos tenido que
+                adoptar de manera forzada? Adaptamos <img class="seminare-text" src="assets/images/seminare-logo-min.png" alt="Seminare"> para aprovechar lo mejor de los dos mundos. Durante años habíamos estado muy adelantados en este tipo de modelos. Hoy las circunstancias han hecho evidente su
+                valor.
+            </p>
         </div>
-    </div>
+        <!-- *** end ¿Por qué en línea *** -->
+        <div class="tituloGrandeNecesidades">¿Qué necesito <span class="desfaz_necesidades">para implementarlo?</span></div>
+        <!--	*** necesidades ***	-->
+        <div class="containerNecesidades">
+            <div class="necesidadesItems tooltip_necesidades" onClick="true">
+                <i class='fad fa-chalkboard-teacher'></i>
+                <span class="necesidadesTitulo">Profesor Capacitado</span>
+                <span class="necesidadesImportancia">Necesario <i class="fad fa-exclamation-triangle"></i></span>
+                <span class="tooltiptext">Nuestro equipo capacitará a los profesores de informática/computación que ya tienes. Se necesitan profesores inteligentes, entusiastas, con vocación docente y predisposición a aprender temas tecnológicos. La capacitación incluye temas técnicos y de
+                    implementación pedagógica.
+                </span>
+            </div>
+
+            <div class="necesidadesItems tooltip_necesidades" onClick="true">
+                <i class="fad fa-laptop-house"></i>
+                <span class="necesidadesTitulo">Alumnos conectados </span>
+                <span class="necesidadesImportancia">Necesario <i class="fad fa-exclamation-triangle"></i></span>
+                <span class="tooltiptext">Buena parte de la actividad del programa ocurre fuera de la clase, es necesario garantizar que los alumnos de tu plantel tengan acceso a un equipo de cómputo básico y conexión de internet fuera del horario de clases. No se recomienda que la totalidad del
+                    trabajo se pretenda realizar en dispositivos móviles.
+                </span>
+            </div>
+
+            <div class="necesidadesItems tooltip_necesidades" onClick="true">
+                <i class="fad fa-laptop"></i>
+                <span class="necesidadesTitulo">Acceso a sala de cómputo</span>
+                <span class="necesidadesImportancia">Opcional <i class="fad fa-check-circle"></i></span>
+                <span class="tooltiptext">Si el programa se ejecutará en un entorno presencial, será necesario destinar para la clase una sala de cómputo administrada por la institución. <br> Los equipos deben tener teclado físico, al menos 8gb de RAM y la administración debe permitir crear cuentas
+                    de usuario por alumno.
+                </span>
+            </div>
+
+            <div class="necesidadesItems tooltip_necesidades" onClick="true">
+                <i class="fad fa-bell-school"></i>
+                <span class="necesidadesTitulo">Horas reservadas</span>
+                <span class="necesidadesImportancia">Necesario <i class="fad fa-exclamation-triangle"></i></span>
+                <span class="tooltiptext">Es importante considerar en la planeación académica de la institución que la clase necesita al menos 90 minutos continuos dentro de la sala de cómputo asignada, lo que requiere un gran esfuerzo de organización en los horarios. Será importante destinar un
+                    espacio de tiempo donde todos los profesores estén libres para su capacitación.</span>
+            </div>
+
+
+        </div>
+        <!--	*** end necesidades ***	-->
+        <div style="padding: 3rem;">
+            <span><i class="fa-thin fa-fingerprint"></i> click en los íconos para más detalles</span>
+        </div>
+
+    </section>
+    <!------------------------------------------------->
+    <!--	end Cómo funciona	-->
+    <!------------------------------------------------->
 
     <!------------------------------------------------->
-    <!--	end DEV	    -->
+    <!--	contenidos	-->
     <!------------------------------------------------->
+    <section id="contenidos">
+        <span class="tituloGrande">Contenidos</span>
+        <p style="margin:2rem;">El equipo de <img class="seminare-text" src="assets/images/seminare-logo-min.png" alt="seminare"> ha desarrollado una sólida plataforma donde se desarrolla el proyecto. A continuación se enlistan las características de los diferentes módulos de la plataforma:</p>
 
-    <!------------------------------------------------->
-    <!--	Seminare    -->
-    <!------------------------------------------------->
-    <div class="container-fluid" id="seminare">
-        <div class="row">
-            <div class="col p-5 mt-2">
-                <p><span style="color: #e47f47">Seminare</span> es una experiencia educativa que materializa los
-                    conceptos y
-                    disciplinas aprendidas en la primera parte del curso y los aterriza en un proyecto de <span
-                        style="color: #e47f47">aplicación real</span> además de despertar y nutrir el
-                    <span style="color: #e47f47">espíritu emprendedor </span>en todos los alumnos al confrontarlos
-                    con
-                    una simulación de muchas realidades del emprendimiento a principios del siglo XXI. La idea es crear
-                    «startups» que tendrán el objetivo de lograr el capital mínimo para su supervivencia (CAP) a lo
-                    largo de 4 meses de arduo trabajo.
-                </p>
+        <div class="contenedorContenidos">
+            <div class="contenidosItem devContenidos">
+                <div class="devBody">
+                    <p class="devTitle">Programación/proyectos guiados</p>
+                    <ul>
+                        <li><i class="fad fa-check-circle listBulletContenidos"></i>Clases invertidas | 13 semanas</li>
+                        <li><i class="fad fa-check-circle listBulletContenidos"></i>PAEs | 13 semanas</li>
+                        <li><i class="fad fa-check-circle listBulletContenidos"></i>Más de 12 proyectos</li>
+                        <li><i class="fad fa-check-circle listBulletContenidos"></i>Evaluación automática.</li>
+                    </ul>
+                </div>
+                <a href="https://demo.seminare.dev" class="devFooter" target="_blank">
+                    Visita los demos <span class='fad fa-gamepad-alt '></span>
+                </a>
+            </div>
+            <div class="contenidosItem emprendimientoContenidos">
+                <div class="emprendimientoBody">
+                    <p class="emprendimientoTitle">Módulo de emprendimiento</p>
+                    <ul>
+                        <li><i class="fad fa-check-circle listBulletContenidos"></i>9 sprints</li>
+                        <li><i class="fad fa-check-circle listBulletContenidos"></i>Entrenamiento personalizado para ejercer 5 posiciones distintas.</li>
+                        <li><i class="fad fa-check-circle listBulletContenidos"></i>Banco automatizado</li>
+                        <li><i class="fad fa-check-circle listBulletContenidos"></i>Emprendimiento disruptivo</li>
+                        <li><i class="fad fa-check-circle listBulletContenidos"></i>Todo la infraestructura que el proyecto necesita. e.g. plataforma inversionistas, concursos.</li>
+                    </ul>
+                </div>
+                <a href="https://emprendimiento.seminare.dev" class="emprendimientoFooter" target="_blank">
+                    Visita los demos <span class='fad fa-gamepad-alt '></span>
+                </a>
             </div>
         </div>
-        <!------------------------------------------------->
-        <!--	features Seminare	-->
-        <!------------------------------------------------->
-        <div class="row p-4">
-            <div class="card-deck">
-                <div class="card card-seminare">
-                    <div
-                        class="card-header card-header-seminare d-flex flex-column align-items-center justify-content-center">
-                        <div class="pleca d-flex align-items-center justify-content-center"
-                            style="background-color: #e47f47"><i class="fas fa-shoe-prints"></i></div>
-                        <h5 class="card-title mt-2" style="color: #e47f47">Fases del proyecto</h5>
-                    </div>
-                    <div class="card-body card-body-seminare-features">
-
-                        <ul>
-                            <li>Deployment</li>
-                            <li>Training</li>
-                            <li>Product Development</li>
-                            <li>Hunting Season</li>
-                            <li>Open Market</li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="card card-seminare">
-                    <div
-                        class="card-header card-header-seminare d-flex flex-column align-items-center justify-content-center">
-                        <div class="pleca d-flex align-items-center justify-content-center"
-                            style="background-color: #e47f47"><i class="fas fa-laptop-code"></i></div>
-                        <h5 class="card-title mt-2" style="color: #e47f47">Plataforma</h5>
-                    </div>
-                    <div class="card-body card-body-seminare-features">
-
-                        <p class="card-text">El proyecto se desarrolla sobre la plataforma. Esta contiene todos los
-                            DCP's
-                            necesarios para ejecutar la experiencia, además de la infraestructura necesaria como un
-                            banco virtual personalizado para cada colegio. </p>
-
-                    </div>
-                </div>
-                <div class="card card-seminare">
-                    <div
-                        class="card-header card-header-seminare d-flex flex-column align-items-center justify-content-center">
-                        <div class="pleca d-flex align-items-center justify-content-center"
-                            style="background-color: #e47f47"><i class="fas fa-hammer"></i></div>
-                        <p class="card-title mt-2" style="color: #e47f47; font-size: 1.2rem;">Habilidades desarrolladas
-                        </p>
-                    </div>
-                    <div class="card-body card-body-seminare-features">
-
-                        <p class="card-text">Además de entrenamientos avanzados de programación, emprendimiento y bagaje
-                            computacional. Los alumnos desarrollan competencias y habilidades relacionadas con el
-                            diseño, las finanzas, las ventas, la organización de un equipo, el trabajo colaborativo y la
-                            competencia leal.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row p-4">
-            <div class="card-deck">
-                <div class="card card-seminare">
-                    <div
-                        class="card-header card-header-seminare d-flex flex-column align-items-center justify-content-center">
-                        <div class="pleca d-flex align-items-center justify-content-center"
-                            style="background-color: #e47f47"><i class="fas fa-ruler-combined"></i></div>
-                        <h5 class="card-title mt-2" style="color: #e47f47">Nivel de los alumnos</h5>
-                    </div>
-                    <div class="card-body card-body-seminare-features">
-
-                        <p class="card-text">Los siguientes ejemplos, fueron desarrollados por alumnos que vivieron la
-                            experiencia de seminare:</p>
-                        <ul>
-                            <li><a href="https://equipo.huin.mx/sergiortellez/astros/tour-sistema-solar">Astros</a></li>
-                            <li><a href="http://blackbox.cloud-it.info">Black Box</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card card-seminare">
-                    <div
-                        class="card-header card-header-seminare d-flex flex-column align-items-center justify-content-center">
-                        <div class="pleca d-flex align-items-center justify-content-center"
-                            style="background-color: #e47f47"><i class="fas fa-balance-scale"></i></div>
-                        <p class="card-title  mt-2" style="color: #e47f47; font-size: 1.2rem;">Emprendimiento disruptivo
-                        </p>
-                    </div>
-                    <div class="card-body card-body-seminare-features">
-
-                        <p class="card-text">El proyecto tiene una profunda vocación humanista al ofrecer a nuestros
-                            futuros emprendedores y empresarios herramientas para desarrollarse y prosperar respetando y
-                            mejorando su entorno y el de los demás.</p>
-                    </div>
-                </div>
-                <div class="card card-seminare">
-                    <div
-                        class="card-header card-header-seminare d-flex flex-column align-items-center justify-content-center">
-                        <div class="pleca d-flex align-items-center justify-content-center"
-                            style="background-color: #e47f47"><i class="fas fa-user-graduate"></i></div>
-                        <h5 class="card-title mt-2" style="color: #e47f47">Egresados</h5>
-                    </div>
-                    <div class="card-body card-body-seminare-features">
-
-                        <p class="card-text">Tenemos registradas hasta ahora 8 empresas reales formadas por
-                            adolescentes
-                            que egresaron de Seminare. Uno de ellos es el administrador de la cafetería de la
-                            PrepaUP,
-                            otro ejemplo se puede encontrar <a href="https://triangle.mx/">aquí</a>.
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!------------------------------------------------->
-        <!--	end features Seminare	-->
-        <!------------------------------------------------->
-        <div class="container mb-0">
-            <div class="row mt-4">
-                <div class="col d-flex align-items-center justify-content-center mb-5"><a
-                        href="https://test.huin.mx/seminare/" class="btn btn-orange fs-3" target="_blank">visita el
-                        demo
-                        <i class="fas fa-gamepad"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    </section>
     <!------------------------------------------------->
-    <!--	end Seminare	    -->
+    <!--	end contenidos	-->
     <!------------------------------------------------->
 
     <!------------------------------------------------->
     <!--	testimonios	-->
     <!------------------------------------------------->
-    <div class="container-fluid mt-0" id="testimonios">
-        <div class="row ml-5 mr-5 mt-0">
-            <div class="col m-5">
-                <h4>¿Qué dicen nuestros alumnos de Seminare? (Antes Shark)</h4>
-                <!-- Inicia video de youtube -->
-                <figure class="embed-responsive embed-responsive-16by9">
-                    <!-- modifica el origen del vídeo -->
-                    <iframe class="embed-responsive-item" width="100%" height="100%"
-                        src="https://www.youtube.com/embed/Wbzcg-1-5JI" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </figure>
-                <!-- modifica el título del vídeo -->
-                <figcaption class="caption-vid d-block">
-                    <h4><i class="fab fa-youtube"></i> Testimonios</h4>
-                    Alumnos egresados de seminare dan su testimonio.
-                </figcaption>
-                <!-- Finaliza Video de Youtube -->
+    <section id="testimonios">
+        <span class="tituloGrande">Testimonios</span>
+        <div class="testimoniosContainer">
+            <div id="empresas_de_alumnos"><span>Empresas reales de egresados</span></div>
+            <a href="http://www.enchulamemistenis.com/" target="_blank" id="enchulame">
+                <i class="fad fa-boot"></i>
+                <span>Enchúlame mis tenis</span>
+            </a>
+            <a href="http://www.nutricafeteria.com.mx/" target="_blank" id="nutri_cafeterias">
+                <i class="fad fa-hat-chef"></i>
+                <span>Nutri Cafeterías</span>
+            </a>
+            <a href="https://www.kuns.com.mx/shop/" target="_blank" id="kuns">
+                <i class="fad fa-palette"></i>
+                <span>Kuns</span>
+            </a>
+            <a href="https://sites.google.com/view/hunabku/" target="_blank" id="hunabku">
+                <i class="fad fa-graduation-cap"></i>
+                <span>Hunab Ku</span>
+            </a>
+            <div id="escuelas_participantes"><span>Escuelas participantes</span></div>
+            <a href="https://www.colegios-cedros-yaocalli.mx/cedros" target="_blank" id="cedros">
+                <img class="cedrosEscudo" src="assets/images/logo_cedros.png" alt="Cedros">
+                <span>Centro Escolar Cedros</span>
+            </a>
+            <a href="https://movil.up.edu.mx/prepaup/varonil" target="_blank" id="prepa_up">
+                <img class="prepaEscudo" src="assets/images/escudo_up.png" alt="Prepa UP">
+                <span>Preparatoria Panamericana Varonil</span>
+            </a>
+            <a href="https://www.iter.edu.mx/alamos/" target="_blank" id="alamos">
+                <img class="prepaEscudo" src="assets/images/alamos-gray.svg" alt="Álamos">
+                <span>Colegio Álamos</span>
+            </a>
+            <div id="video">
+                <iframe class='youtube' src='https://www.youtube.com/embed/vwPQErxZnRo' frameborder='1' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>
             </div>
         </div>
-    </div>
+
+    </section>
     <!------------------------------------------------->
     <!--	end testimonios	-->
     <!------------------------------------------------->
 
     <!------------------------------------------------->
-    <!--	footer	-->
+    <!--	precios	-->
     <!------------------------------------------------->
+    <section id="precios">
+        <span class="tituloGrande">Precios</span>
 
-    <footer class="footer d-block default-background container-fluid p-4">
-        <div class="row">
-            <div class="col d-flex align-items-center justify-content-center"><span class="texto-footer-huin">Powered
-                    by </span><img src="../../assets/images/logo-huin-largo.png" class="footer-huin"
-                    title="Creado con ❤ por Human Inspiration">
+        <div class="gridPrecios">
+            <div class="precios">
+                <div class="precio">
+                    $9.6 <sup class="moneda">USD</sup>
+                </div>
+                <div class="condiciones">
+                    <div class="condicion"><i class="fa-duotone fa-user-graduate"></i> Por alumno</div>
+                    <div class="condicion"><i class="fa-duotone fa-calendars"></i> Facturación mensual</div>
+                </div>
+                <ul>
+                    <li><i class="fad fa-check-circle listBulletContenidos"></i>Plataforma personalizada</li>
+                    <li><i class="fad fa-check-circle listBulletContenidos"></i>Módulo de programación</li>
+                    <li><i class="fad fa-check-circle listBulletContenidos"></i>Módulo de proyectos guiados</li>
+                    <li><i class="fad fa-check-circle listBulletContenidos"></i>Módulo de emprendimiento</li>
+                    <li><i class="fad fa-check-circle listBulletContenidos"></i>Capacitación a profesores</li>
+                    <li><i class="fad fa-check-circle listBulletContenidos"></i>Seguimiento y consultoría de implementación</li>
+                    <li><i class="fad fa-check-circle listBulletContenidos"></i>Cuentas gratuitas para profesores</li>
+
+
+                </ul>
+
+            </div>
+            <div class="precios">
+                <div class="precio">
+                    $4.9 <sup class="moneda">USD</sup>
+                </div>
+                <div class="condiciones">
+                    <div class="condicion"><i class="fa-duotone fa-user-graduate"></i> Por alumno</div>
+                    <div class="condicion"><i class="fa-duotone fa-calendars"></i> Facturación Mensual</div>
+                </div>
+                <ul>
+                    <li><i class="fad fa-check-circle listBulletContenidos"></i>Plataforma personalizada</li>
+                    <li><i class="fad fa-check-circle listBulletContenidos"></i>Módulo de programación</li>
+                </ul>
+
             </div>
         </div>
-    </footer>
 
+        <div class="cotizaciones">
+            <span>Pide una cotización <a href="mailto:sergio@huin.mx?subject=Cotización programa Seminare" target="_blank">aquí <i class="fa-duotone fa-envelope-open-dollar"></i></a></span>
+        </div>
+    </section>
+    <!------------------------------------------------->
+    <!--	end precios	-->
+    <!------------------------------------------------->
+
+
+    <!------------------------------------------------->
+    <!--	footer	-->
+    <!------------------------------------------------->
+    <footer>
+        <span>Powered by</span> <img src="assets/images/logo-huinl-blanco.png" alt="Human Inspiration">
+    </footer>
     <!------------------------------------------------->
     <!--	end footer	-->
     <!------------------------------------------------->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
-        integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'>
-    </script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'
-        integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'>
-    </script>
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'
-        integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'>
-    </script>
-    <!-- end of optional Bootstrap JS -->
+
+    <!------------------------------------------------->
+    <!--	scripts	-->
+    <!------------------------------------------------->
+    <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/nav.min.js"></script>
+    <script src="assets/js/stats.min.js"></script>
+    <!------------------------------------------------->
+    <!--	end scripts	-->
+    <!------------------------------------------------->
 </body>
 
 </html>
