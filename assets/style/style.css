@@ -77,7 +77,7 @@ body {
 
 }
 
-body section {
+body > section {
     max-width: 1824px;
     margin: 0 auto !important;
     float: none !important;
@@ -95,96 +95,147 @@ body section {
 /*...................................................*/
 /*###################################################*/
 
+/*-------------------------------*/
+/* collapsed mobile nav */
+/*-------------------------------*/
+
 nav {
-    overflow: hidden;
-    background-color: #333;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+   
+    background-color: #333;
     font-weight: 100;
-    position: fixed;
+
     /* Set the navbar to fixed position */
+    position: fixed;
     top: 0;
-    /* Position the navbar at the top of the page */
-    width: 100%;
-    /* Full width */
+    /* full width */
+    width: 100vw;
+    /* always in the front */
     z-index: 9;
 }
 
-nav a {
-    float: left;
-    display: block;
-    color: var(--text);
-    text-align: center;
-    padding: 14px 16px;
+.navIcons{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90vw;
+    padding: 1rem 1rem;
+}
+/* eliminamos los estilos por defecto de los botones dentro de la nav */
+nav button{
+    all: unset;
+}
+.iconTrigger{
+    font-size: 2rem;
     text-decoration: none;
-    font-size: 17px;
+    color: var(--text);
 }
-
-.brand {
-    margin-right: auto;
-}
-
 .brand img {
-    height: 1.4rem;
+    height: 2rem;
     width: auto;
 }
 
-.active {
+nav .navContents {
+    /*propiedades a animar*/
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    /*control de animaciones*/
+    transition: visibility 0s, opacity 0.3s, height 0.s linear;
+    -webkit-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -moz-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -ms-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+    -o-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
+}
+
+
+/*-------------------------------*/
+/* end collapsed mobile nav */
+/*-------------------------------*/
+
+/*-------------------------------*/
+/* expanded mobile nav */
+/*-------------------------------*/
+nav.expanded {
+    display: flex;
+    flex-direction: column; 
+}
+
+nav.expanded .navContents {
+    /* segunda parte de la animación */
+    visibility: visible;
+    opacity: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    height: 100vh;    
+}
+
+nav.expanded .navContents a{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.512);
+}
+
+.navContents a {
+    color: var(--text);
+    text-align: center;
+    padding: 2rem 1.4rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+   
+}
+
+.navContents a.active {
     background-color: var(--primary);
     color: white;
     font-weight: 300;
 }
 
-nav .iconTrigger {
-    display: none;
-}
+/*-------------------------------*/
+/* end expanded mobile nav */
+/*-------------------------------*/
 
-nav a:hover {
-    background-color: #555;
-    color: white;
-}
+/*-------------------------------*/
+/* Tabletas y computadoras */
+/*-------------------------------*/
 
-
-
-/* Para el estado antes de la expansión de contenidos */
-@media screen and (max-width: 600px) {
-
-
-    nav section {
+/* desktop up */
+@media (min-width: 648px) {
+    nav{
+        flex-direction: row;
+    }
+    .iconTrigger{
         display: none;
     }
-
-    nav a.iconTrigger {
-        float: right;
-        display: block;
+    nav .navIcons{
+        width: auto;
+    }
+   nav .navContents {
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        height: 4rem;  
+    }
+    nav .navContents a{
+        padding: 0 1rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 }
+/* end desktop up */
 
-/* Para el estado después de la expansión de contenidos */
-@media screen and (max-width: 600px) {
-    nav.responsive {
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav.responsive section {
-        display: flex;
-        flex-direction: column;
-        align-self: stretch;
-
-    }
-
-    nav.responsive .iconTrigger {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-}
-
-/* compensa el ancho de la barra */
-
-
+/*-------------------------------*/
+/* end Tabletas y computadoras */
+/*-------------------------------*/
 
 
 /*###################################################*/

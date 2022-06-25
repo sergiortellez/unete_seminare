@@ -1,22 +1,60 @@
+//añade las variables globales y los event listeners que controlan las barras de navegación. 
+
+const button = document.querySelector('.iconTrigger');
+
+button.addEventListener('click', toggleNav);
+
+//este listener sólo tiene sentido si la pantalla mide menos de 600px
+if(window.innerWidth < 648){
+    const clickableArea = document.querySelector('.navContents');
+    clickableArea.addEventListener('click', toggleNav);
+}
+
+
+
+
 /*<------------------------------------------------->
-<!--	toogleResponsiveNav	-->
+<!--	toggleResponsiveNav	-->
 <!-------------------------------------------------->
 * Descripción:
-    Añade un listener al botón que despliega los contenidos de la barra de navegación cuando el navegador mide menos de 600px (controlado desde el CSS). Sólo añade la clase 'responsive' al cuerpo de la barra de tareas.
+    
 * Parámetros:
     -ninguno
 * Dependencias:ninguna
-* Devuelve/resultado:hace visible el contenido de la barra de herramientas en dispositivos con ancho menor a 600px
+* Devuelve/resultado:
 <!------------------------------------------------->*/
 
-const button = document.querySelector('.iconTrigger');
-button.addEventListener('click', ()=>{
+
+
+
+function toggleNav(){
+    
+    //encuentra la barra de navegación
     var nav = document.querySelector('nav');
-    nav.classList.toggle('responsive');
-});
+
+    //encuentra el ícono
+    var toggleIcon = document.querySelector('#toggleIcon');
+
+    //revisa si la barra está expandida
+    if(nav.classList.contains('expanded')){
+        //contrae la barra
+        nav.classList.remove('expanded');
+        //quita el ícono de cerrar
+        toggleIcon.classList.remove('fa-xmark');
+        //añade el ícono de barras
+        toggleIcon.classList.add('fa-bars');
+    }else{
+        nav.classList.add('expanded');
+         //quita el ícono de barras
+         toggleIcon.classList.remove('fa-bars');
+         //añade el ícono de cerrar
+         toggleIcon.classList.add('fa-xmark');
+    }
+   
+}
 
 /*<!------------------------------------------------->
-<!--	end toogleResponsiveNav	-->
+<!--	end toggleResponsiveNav	-->
 <!------------------------------------------------->*/
 
 
