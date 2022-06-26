@@ -14,6 +14,7 @@
     --primary-mono: #FA9D5A;
     --contrast: #1550AD;
     --contrast-mono: #A2C4FA;
+    --navHeight:6vh;
 
 }
 
@@ -113,6 +114,7 @@ nav {
     top: 0;
     /* full width */
     width: 100vw;
+    
     /* always in the front */
     z-index: 9;
 }
@@ -124,19 +126,20 @@ nav {
     justify-content: space-between;
 
     width: 90vw;
-    padding: 1rem 1rem;
+    height: var(--navHeight);
+    
 }
 /* eliminamos los estilos por defecto de los botones dentro de la nav */
 nav button{
     all: unset;
 }
 .iconTrigger{
-    font-size: 2rem;
+    font-size: 1.4rem;
     text-decoration: none;
     color: var(--text);
 }
 .brand img {
-    height: 2rem;
+    height: 1.4rem;
     width: auto;
 }
 
@@ -186,7 +189,7 @@ nav.expanded .navContents a{
 .navContents a {
     color: var(--text);
     text-align: center;
-    padding: 2rem 1.4rem;
+    padding: 2rem 1rem;
     text-decoration: none;
     font-size: 1.2rem;
    
@@ -216,15 +219,17 @@ nav.expanded .navContents a{
     }
     nav .navIcons{
         width: auto;
+        margin-left: 1rem;
     }
    nav .navContents {
         visibility: visible;
         opacity: 1;
         display: flex;
         align-items: center;
-        height: 4rem;  
+        height: 7vh;  
     }
     nav .navContents a{
+        font-size: 1.2rem;
         padding: 0 1rem;
         height: 100%;
         display: flex;

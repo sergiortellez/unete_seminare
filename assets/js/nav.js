@@ -44,11 +44,13 @@ function toggleNav(){
         //añade el ícono de barras
         toggleIcon.classList.add('fa-bars');
     }else{
+        
         nav.classList.add('expanded');
          //quita el ícono de barras
          toggleIcon.classList.remove('fa-bars');
          //añade el ícono de cerrar
          toggleIcon.classList.add('fa-xmark');
+       
     }
    
 }
