@@ -84,6 +84,12 @@ body > section {
     float: none !important;
 }
 
+.mt-3{
+    margin-top: 3rem;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
 /*###################################################*/
 /*...................................................*/
 /* end general properties                            */
@@ -229,8 +235,8 @@ nav.expanded .navContents a{
         height: 7vh;  
     }
     nav .navContents a{
-        font-size: 1.2rem;
-        padding: 0 1rem;
+        font-size: 1rem;
+        padding: 0 0.7rem;
         height: 100%;
         display: flex;
         align-items: center;
@@ -1037,10 +1043,10 @@ header>img {
     grid-template-areas:
         "empresas empresas"
         "enchulame  nutri"
-        "kuns hanabku"
+        "kuns hunabku"
         "escuelas escuelas"
         "cedros prepaup"
-        "alamos alamos"
+        "alamos spark_up"
         "video video";
 
 }
@@ -1053,9 +1059,9 @@ header>img {
     justify-content: center;
     padding: 0.4rem;
     text-decoration: none;
-    outline: solid 2px #fff;
+    /* outline: solid 2px #fff; */
     outline-offset: -2px;
-    color: var(--contrast-mono);
+    color: #fff;
 
 }
 
@@ -1065,24 +1071,24 @@ header>img {
     background-color: var(--primary);
     outline: solid 5px var(--background);
     outline-offset: -5px;
-    color: var(--background);
+    color: #fff;
 }
 
 .testimoniosContainer>a:visited,
 .testimoniosContainer>a:visited svg {
-    color: var(--contrast-mono);
+    color: #fff;
 }
 
 .testimoniosContainer>div svg,
 .testimoniosContainer>a svg {
     font-size: 3rem;
     margin: 01rem;
-    color: var(--contrast-mono);
+    color: #fff;
 }
 
 .testimoniosContainer>div span,
 .testimoniosContainer>a span {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
     font-weight: 300;
     margin: 0.5rem;
     text-align: center;
@@ -1093,11 +1099,14 @@ header>img {
     font-size: 2rem;
 }
 
+
 #empresas_de_alumnos {
     grid-area: empresas;
-    font-size: 2rem;
+    padding: 2rem 0;
+
     /* background-color: var(--contrast-mono); */
     /* color: var(--background); */
+    padding-bottom: 2rem;
 }
 
 #enchulame {
@@ -1120,12 +1129,14 @@ header>img {
 }
 
 #hunabku {
-    grid-area: hanabku;
+    grid-area: hunabku;
     /* background-color: var(--contrast); */
 }
 
 #escuelas_participantes {
     grid-area: escuelas;
+    padding: 2rem 0;
+
     /* background-color: var(--primary-mono); */
     /* color: var(--background); */
 
@@ -1148,13 +1159,19 @@ header>img {
 
 }
 
+#spark_up{
+    grid-area: spark_up;
+}
+
 #video {
     grid-area: video;
     padding: 0;
     min-height: 18rem;
+    margin-top: 3rem;
 
 }
 
+/* imagenes escuelas */
 .prepaEscudo {
     width: 9rem;
     margin: 1rem;
@@ -1162,34 +1179,231 @@ header>img {
 
 .cedrosEscudo {
     width: 4rem;
-    margin: 1rem;
+    height: auto;
 }
-
+.alalmosEscudo {
+    width: 7rem;
+}
+/*fin imagenes escuelas */
 .youtube {
 
-    width: 100%;
-    min-height: 100%;
+    min-width: 50%;
+    height: auto;
+    min-height: 600px;
+    aspect-ratio: 9/16
 
 }
 
 /* cellphone landscape up */
-@media (min-width: 576px) {
+@media (min-width: 900px) {
     .testimoniosContainer {
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(12, 1fr);
         grid-template-areas:
-            "empresas empresas empresas empresas empresas empresas video video"
-            "enchulame enchulame enchulame nutri nutri nutri video video"
-            "kuns kuns kuns hanabku hanabku hanabku video video"
-            "escuelas escuelas escuelas escuelas escuelas escuelas  video video"
-            "cedros cedros prepaup prepaup alamos alamos video video";
+            "empresas empresas empresas empresas empresas empresas empresas empresas video video video video"
+            "enchulame enchulame  nutri nutri kuns kuns hunabku hunabku video video video video"
+            "escuelas escuelas escuelas escuelas escuelas escuelas escuelas escuelas video video video video"
+            "cedros cedros prepaup prepaup alamos alamos spark_up spark_up video video video video";
 
     }
 }
-
 /* end cellphone landscape up */
+
+/*-------------------------------*/
+/* bubble speech */
+/*-------------------------------*/
+
+#bubbles_grid{
+    margin: 5rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;   
+}
+
+#bubbles_grid cite{
+    display: block;
+    text-align: right;
+    font-size: 0.7rem;
+    margin-top: 0.4rem;
+}
+
+
+
+.bubble_primary{
+    --bubble-color: var(--primary);
+}
+.bubble_contrast{
+    --bubble-color: var(--contrast);
+}
+.bubble_primary_mono{
+    --bubble-color: var(--primary-mono);
+}
+.bubble_contrast_mono{
+    --bubble-color: var(--contrast-mono)
+}
+.bubble{
+    width: auto;
+    margin: 10px auto;
+    background: var(--bubble-color);
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    position:relative;
+    font-weight: 300;
+    font-size: 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+   align-self: flex-end;
+   /* justify-self: end; */
+}
+.bubble_right{
+    text-align: right;
+}
+.bubble_left{
+    text-align: left;
+}
+.bubble:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+}
+    
+.bubble_right::before{
+    border-left: 10px solid var(--bubble-color);
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--bubble-color);
+    border-bottom: 10px solid transparent;
+    right: -19px;
+    top: 6px;
+}
+.bubble_left::before{  
+  border-right: 10px solid var(--bubble-color);
+  border-left: 10px solid transparent;
+  border-top: 10px solid var(--bubble-color);
+  border-bottom: 10px solid transparent;
+  left: -19px;
+  top: 6px;
+}
+.bubble_bottom::before{
+    
+    border-left: 10px solid transparent;
+    border-right: 10px solid var(--bubble-color);
+    border-top: 10px solid var(--bubble-color);
+    border-bottom: 10px solid transparent;
+    left: 20%;
+    bottom: -19px;
+}
+
+.bubble_top::before{
+    
+    border-left: 10px solid transparent;
+    border-right: 10px solid var(--bubble-color);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid var(--bubble-color);
+    left: 20%;
+    top: -19px;
+}
+
+
+
+/*-------------------------------*/
+/* end bubble speech */
+/*-------------------------------*/
+
+
+
 /*###################################################*/
 /*...................................................*/
 /* end testimonios */
+/*...................................................*/
+/*###################################################*/
+
+/*###################################################*/
+/*...................................................*/
+/* beneficios */
+/*...................................................*/
+/*###################################################*/
+
+#beneficios {
+    font-weight: 200;
+    padding: 5rem 2rem;
+    margin: 2rem;    
+}
+
+.gridBeneficios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+/* cellphone landscape up */
+@media (min-width: 640px) {
+    .gridBeneficios{
+
+        grid-template-columns: repeat(3, 1fr);
+
+
+    }
+}
+/* end cellphone landscape up */
+.tooltip_beneficios {
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltip_beneficios .tooltiptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: rgb(53, 53, 53);
+    color: var(--text);
+    text-align: left;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 15%;
+    left: 10%;
+    margin-left: 0px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 1rem;
+}
+/* Por ser un grid de dos elementos en celulares*/
+
+/* cellphone landscape up */
+@media (max-width: 640px) {
+    .tooltip_beneficios:nth-child(2n) .tooltiptext {
+        left: -20%;
+    }
+}
+/* end cellphone landscape up */
+
+/* Por ser un grid de tres elementos */
+
+/* cellphone landscape up */
+@media (min-width: 640px) {
+    .tooltip_beneficios:nth-child(3n) .tooltiptext {
+        left: -10%;
+    }
+}
+/* end cellphone landscape up */
+
+
+
+
+
+.tooltip_beneficios:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*###################################################*/
+/*...................................................*/
+/* end beneficios */
 /*...................................................*/
 /*###################################################*/
 
@@ -1283,6 +1497,7 @@ header>img {
     text-decoration: none;
     color: var(--primary);
 }
+
 
 
 /*###################################################*/
