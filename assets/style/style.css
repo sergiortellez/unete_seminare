@@ -66,6 +66,7 @@ html {
     font-size: var(--fs-b);
     font-family: 'Roboto', sans-serif;
     color: var(--text);
+    overflow-x: hidden;
 
 }
 
@@ -456,10 +457,28 @@ header>img {
 
     font-weight: 200;
     padding-bottom: 4rem;
+    padding-top: 6rem;
 }
 
-
-
+#que_es .tituloGrande{
+    margin-top: 3rem;
+}
+#queEsGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 6rem 2rem;
+    
+}
+.cardQueEs{
+    padding: 1rem;
+    background-color: var(--contrast);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 /*-------------------------------*/
 /* habilidades */
 /*-------------------------------*/
@@ -473,7 +492,9 @@ header>img {
     gap: 0.6rem;
 }
 
-
+.leyenda_habilidades{
+    margin:6rem 2rem 2rem 3rem;
+}
 .tooltip {
     position: relative;
     display: flex;
@@ -484,6 +505,11 @@ header>img {
     background-color: var(--contrast);
     cursor: pointer;
     padding: 0.3rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .tooltip:nth-child(2n) {
@@ -564,7 +590,6 @@ header>img {
 #como_funciona {
     font-weight: 200;
     padding-top: 5rem;
-
 }
 
 .desfaz_como_funciona {
@@ -583,6 +608,12 @@ header>img {
     background-color: var(--contrast-mono);
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+   
 }
 
 /* cellphone landscape up */
@@ -606,6 +637,10 @@ header>img {
     background-color: var(--contrast);
     padding: 1rem;
     font-weight: 500;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+   
 }
 
 .cardModuloHeader div {
@@ -629,10 +664,11 @@ header>img {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    background-color: var(--contrast-mono);
+    background-color: transparent;
     color: var(--background);
     font-weight: 300;
     min-height: 13.5rem;
+    border-radius: 10px;
 }
 
 .cardModuloBody ul {
@@ -650,12 +686,12 @@ header>img {
 }
 
 .cardModuloFooter {
-    background-color: var(--contrast-mono);
+    background-color: transparent;
     color: var(--background);
     border-top: solid var(--contrast) 2px;
     padding: 1rem;
     font-weight: 300;
-    min-height: 7.5rem;
+    min-height: 8.5rem;
     align-self: flex-end;
     margin-top: auto;
 }
@@ -676,7 +712,18 @@ header>img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
+    
+}
+
+.OCIiCard{
+    background-color: var(--contrast);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 1rem;
 }
 
 .OCIiDiagrama {
@@ -685,10 +732,13 @@ header>img {
     flex-direction: column;
     justify-content: center;
 }
-
+.OCIiDiagrama p{
+    width: 100%;
+    text-align: center;
+}
 .ociiIframe {
     width: 100%;
-    height: 980px;
+    height:1000px;
 }
 
 /* cellphone landscape up */
@@ -709,9 +759,16 @@ header>img {
 
     .ociiIframe {
         width: 100%;
-        height: 800px;
+        height: 1010px;
     }
 }
+/* tablet landscape up */
+@media (min-width: 1024.1px) {
+    .ociiIframe {
+        height:800px;
+    }
+}
+/* end tablet up */
 
 .siglas {
     align-self: center;
@@ -772,12 +829,15 @@ header>img {
     font-size: 3rem;
     margin: 2rem;
     text-align: center;
+    margin-top: 4rem;
 }
 
 .containerNecesidades {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(9rem, 15rem);
+    gap: 1rem;
+    
 
 }
 
@@ -787,6 +847,7 @@ header>img {
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
+    
 
 }
 
@@ -854,6 +915,7 @@ header>img {
     color: black;
 } */
 
+
 .tooltip_necesidades .tooltiptext {
     visibility: hidden;
     width: 100%;
@@ -911,6 +973,7 @@ header>img {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: auto;
     gap: 2rem;
+    margin: 0 2rem;
 }
 
 
@@ -920,6 +983,7 @@ header>img {
     align-items: center;
     justify-content: center;
     margin: 2rem;
+   
 }
 
 .devBody {
@@ -927,6 +991,8 @@ header>img {
     padding: 1rem;
     width: 100%;
     height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .devTitle {
@@ -956,12 +1022,14 @@ header>img {
     font-size: 1.4rem;
     font-weight: 500;
     text-decoration: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 
 }
 
 .devFooter:hover,
 .emprendimientoFooter:hover {
-    outline: solid 4px var(--text);
+    outline: solid 4px #fff;
     outline-offset: -4px;
 
 }
@@ -971,6 +1039,8 @@ header>img {
     padding: 1rem;
     width: 100%;
     color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .emprendimientoBody ul{
@@ -989,6 +1059,7 @@ header>img {
     font-weight: 300;
     margin-top: 1rem;
     list-style: none;
+
 }
 
 .emprendimientoFooter {
@@ -1000,6 +1071,8 @@ header>img {
     font-size: 1.4rem;
     font-weight: 500;
     text-decoration: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .listBulletContenidos {
@@ -1193,6 +1266,21 @@ header>img {
     aspect-ratio: 9/16
 
 }
+
+/* cellphone landscape up */
+@media (min-width: 600px) {
+    .testimoniosContainer {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "empresas empresas empresas empresas"
+            "enchulame   nutri  kuns  hunabku "
+            "escuelas escuelas escuelas escuelas"
+            "cedros  prepaup  alamos  spark_up "
+            "video video video video";
+
+    }
+}
+/* end cellphone landscape up */
 
 /* cellphone landscape up */
 @media (min-width: 900px) {
@@ -1450,6 +1538,11 @@ header>img {
     background-color: var(--contrast);
     color: #fff;
     padding: 3rem 0.3rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .precio{
