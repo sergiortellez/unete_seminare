@@ -157,8 +157,9 @@ nav .navContents {
     visibility: hidden;
     opacity: 0;
     height: 0;
+
     /*control de animaciones*/
-    transition: visibility 0s, opacity 0.3s, height 0.s linear;
+    transition: visibility 0s, opacity 0.3s, height 0.4s linear;
     -webkit-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
     -moz-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
     -ms-transition: visibility 0s, opacity 0.3s, height 0.4s linear;
